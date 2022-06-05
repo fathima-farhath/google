@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.total
+{
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    
+}
+.links{
+   padding: 10px;
+   font-size: 15px;
+   display: flex;
+   position: absolute;
+   right: 0;
+}
+
+.header a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+.mainbody{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   position: relative;
+   
+}
+
+.contents{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   position: relative;
+   justify-content: center;
+}
+.app{
+    border: 1px solid;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: hidden;
+}
+.app:hover{
+    cursor: pointer;
+    background: rgb(240, 235, 235);
+}
+
+.image img{
+   height: 150px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 45vw;
+   
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    padding: 7px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+}
+
+.search input{
+    flex: 1;
+     border: hidden;
+     outline: hidden;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.buttons{
+   margin: 25px;
+}
+.btn{
+    padding: 15px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    background: white;
+    border: hidden;
+}
+.btn:hover{
+    cursor: pointer;
+    background: rgb(216, 211, 211);
+}
+.apps{
+    padding-top: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: hidden;
+   background: rgb(240, 235, 235);
+}
+@media only screen and (max-width: 650px){
+ .search{
+     width: 54%;
+ }
+ .search input{
+     margin-left: 5px;
+ font-size: 14px;
+ }
+ .image img{
+  width: 225px;
+ }
+}
